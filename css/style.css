@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  line-height: 1.5;
+  font-family: 'Raleway', sans-serif;
+}
+h1{
+  font-size: 2.5rem;
+}
+h2{
+  font-size: 2rem;
+}
+
+img{
+  width: 100%;
+}
+p{
+  font-size: 1.1rem;
+  margin: 10px 0;
+  line-height: 1.7em;
+  font-weight: 500;
+}
+#home-header{
+   height: 100vh;
+ background-image: url('/laptop-3d.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #f0bba2;
+  background-position: top right;
+}
+
+#showcase{
+  padding: 120px;
+  color: #fff;
+}
+
+#showcase  h1,
+#showcase  h2{
+font-size: 70px;
+color: #2b2626;
+}
+
+#showcase h1{
+  font-weight: 300;
+  margin-bottom: -30px;
+}
+
+#showcase h2{
+  margin-left: 100px;
+}
+
+p{
+  padding-bottom: 15px;
+  width: 50%;
+}
+
+main{
+  margin-left: 290px;
+}
+.contenido{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+nav ul li{
+  list-style: none;
+  width: 100%;
+}
+nav ul li a{
+ display: flex;
+  align-items: center;
+  font-family: montserrat, sans-serif;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+  font-size: 18px;
+  color: #444;
+  position: relative;
+  padding: 25px 30px;
+}
+nav ul li a i {
+  margin-right: 15px;
+  font-size: 20px;
+  min-width: 24px;
+  text-align: center;
+}
+nav ul li a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background: #e3e9f7;
+  border-radius: 40px 0 0 40px;
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+ 
+nav ul li a:hover {
+  color: #2b2626;
+}
+
+nav ul li a:hover::before {
+  width: 100%; 
+}
+.logo{
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin: 25px;
+}
+.logo img{
+  width: 100%;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.redes-sociales a {
+  color: #333;
+  font-size: 18px;
+}
+.footer-text {
+  font-size: 13px;
+  color: #aaa;
+}

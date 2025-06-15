@@ -1,0 +1,143 @@
+body{
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 290px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul li{
+  list-style: none;
+  width: 100%;
+}
+nav ul li a{
+ display: flex;
+  align-items: center;
+  font-family: montserrat, sans-serif;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+  font-size: 18px;
+  color: #444;
+  position: relative;
+  padding: 25px 30px;
+}
+nav ul li a i {
+  margin-right: 15px;
+  font-size: 20px;
+  min-width: 24px;
+  text-align: center;
+}
+nav ul li a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background: #e3e9f7;
+  border-radius: 40px 0 0 40px;
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+ 
+nav ul li a:hover {
+  color: #2b2626;
+}
+
+nav ul li a:hover::before {
+  width: 100%; 
+}
+.logo{
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin: 25px;
+}
+.logo img{
+  width: 100%;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.redes-sociales a {
+  color: #333;
+  font-size: 18px;
+}
+.footer-text {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.caja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    padding: 50px 55px;
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.caja h2{
+    color: #688C7F;
+    font-size: 37px;
+    margin-bottom: 60px;
+    font-family: Ubuntu;
+}
+
+label{
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 13px;
+}
+
+input, textarea{
+    padding: 14px 22px;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    background-color: #CFD9CC;
+}
+.caja img{
+    height: 90%;
+    width: 600px;
+}
+.form-txt{
+    margin-bottom: 20px;
+}
+
+.form-txt a{
+    color: #0597F2;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
